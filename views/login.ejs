@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+
+<h2 class="page-title"><%= title %></h2>
+<div class="login-form">
+    <form action="/login" method="POST">
+        <div class="user-input"><input type="email" name="emailInput" placeholder="email"></div>
+        <div class="pass-input"><input type="password" name="pwdInput" placeholder="password"></div>
+        <div align="center"><button type="submit" class="btn btn-primary">Login</button></div>
+    </form>
+</div>
+
+<% if (error != null) { %>
+    <div class="login-error"><%= error %></div>
+<% } %>
+
+<p align="center"><a href="/login/new-acct">No login? Create a new account.</a></p>
+
+<%- include('partials/footer.ejs') %>

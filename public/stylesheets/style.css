@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+html, body {
+  background: lightgreen;
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: 'Heebo', sans-serif
+}
+
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.red {color: red;}
+
+.card {
+    width: 500px;
+    border: none;
+    border-radius: 20px
+}
+
+.form-control {
+    border-radius: 7px;
+    border: 1.5px solid #E3E6ED
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border: 1.5px solid #E3E6ED;
+    background-color: #F7F8FD;
+    letter-spacing: 1px
+}
+
+.btn-primary {
+    background-color: #5878FF !important;
+    border-radius: 7px
+}
+
+.btn-primary:focus {
+    box-shadow: none
+}
+
+.text {
+    font-size: 13px;
+    color: #9CA1A4
+}
+
+.menu-code {
+    background: #F5F8FD;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.fa {
+  font-size: 3rem;
+  color: black;
+}
+
+.flex-row {
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    margin: 0 1px 0
+}
+
+.flex-column p {
+    font-size: 14px
+}
+
+span.mb-2 {
+    font-size: 12px;
+    color: #8896BD
+}
+
+h5 span {
+    color: #869099
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: gray;
+}
+
+.header-img {
+  height: 150px;
+  margin: 0 left;
+}
+
+.header-img .menu-icon {
+  float: left;
+  width: 40%;
+}
+
+.header-img .app-icon {
+  float: left;
+  width: 60%;
+}
+
+.header-img .menu-icon img {
+  float: left;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.header-img .app-icon img {
+  float: left;
+  width: 100px;
+}
+
+img.icon-img, img.url-img {
+  height: 60px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 1px solid white;
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: left;
+  z-index: 1;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: lightgray;
+  font-size: 3rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: white;
+  color: black;
+}
+
+.dropdown .dropdown-content ul li a:hover {
+  background-color: lightgray;
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content ul li {
+  padding: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.login-box {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+}
+
+.login-form .user-input, .login-form .pass-input, #new-menu div {
+  padding: 8px;
+}
+
+.login-form .user-input input, .login-form .pass-input input, #new-menu input, .menu-edit div input {
+  width: 350px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+
+#new-menu {
+  display: none;
+  padding-bottom: 100px;
+}
+
+.menu-edit img {
+  height: 40px;
+}
+
+.menu-edit div, #new-menu div {
+  width: 100%;
+  padding: 10px;
+}
+
+.menu-edit .menu-btn {
+  text-align: center;
+}
+
+.login-error {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2.page-title, h1.page-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.required {
+  color: red;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+}

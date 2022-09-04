@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+
+<% if (error != '') { %>
+    <%= error %>
+<% } else { %>
+<h2 class="page-title">New Menu</h2>
+<form action="/menu/save" method="POST">
+    <div class="menu-edit">
+        <div class="menu-name"><input type="text" name="menuName" value="<%= item[0].name %>"></div>
+        <div class="menu-icon-link"><input type="text" name="menuIcon" value="<%= item[0].icon %>"> <img src="<%= item[0].icon %>"></div>
+        <div class="menu-url"><input type="text" name="menuUrl" value="<%= item[0].menuUrl %>"></div>
+        <div class="menu-btn">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary" onclick="javascript:location.href='/';">Cancel</button>
+            <input type="hidden" name="menuId" value="<%= item[0]._id %>">
+        </div>
+    </div>
+</form>
+<% } %>
+
+<%- include('partials/footer.ejs') %>
